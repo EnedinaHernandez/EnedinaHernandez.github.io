@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo -->
+    <title>Mixteco</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./imagenes/ícono.png" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Iconos de bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./imagenes/ícono.png"
+              width="50px"
+              alt="Logo de la pagina"
+            />
+          </a>
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#sobre-mixteco"
+                >Sobre Mixteco</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lecciones">Lecciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Encabezado-->
+    <section class="encabezado">
+      <div
+        class="encabezado-principal d-flex flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="encabezado-imagen-perfil rounded-circle"
+          src="./imagenes/gachupin.jpeg"
+          alt="imagen de perfil"
+        />
+        <h1>Aprende Mixteco</h1>
+        <h2>Variante de Magdalena Peñasco, Tlaxiaco, Oaxaca</h2>
+      </div>
+
+      <!-- carrusel -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/gato.png" class="d-block w-100" alt="gato" />
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/perro.png" class="d-block w-100" alt="perro" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sobre Mixteco -->
+    <section id="sobre-mixteco" class="sobre-mixteco seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo texto-blanco">Mixteco</h2>
+        <div id="mixteco">
+          <p class="seccion-texto">
+            El mixteco es el nombre que se da a un grupo de lenguas
+            estrechamente relacionadas que se hablan en el oeste del estado de
+            Oaxaca y las partes colindantes de Guerrero y Puebla. Cada pueblo
+            tiene su manera de hablar y generalmente se puede entender el habla
+            de los que viven en los pueblos cercanos, pero no el habla de los
+            que viven más lejos de un día de camino.
+          </p>
+        </div>
+        <button
+          onclick="muestra_oculta('mixteco')"
+          class="btn btn-secondary mb-4"
+          form="mixteco"
+        >
+          +
+        </button>
+      </div>
+    </section>
+
+    <!-- Lecciones -->
+    <section id="lecciones" class="lecciones seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Lecciones</h2>
+      <!-- Galeria de Lecciones -->
+      <div class="container text-center lecciones-contenedor">
+        <div class="row">
+          <!-- Leccion1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="leccion">
+              <a href="numeros.html" target="_blank">
+                <img src="./imagenes/numeros.jpeg" alt="Numeros" />
+                <p>Números</p>
+              </a>
+            </div>
+          </div>
+          <!-- Leccion2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="leccion">
+              <a href="colores.html" target="_blank">
+                <img src="./imagenes/colores.jpeg" alt="Los colores" />
+                <p>Los colores</p>
+              </a>
+            </div>
+          </div>
+          <!-- Leccion3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="leccion">
+              <a href="" target="_blank">
+                <img src="./imagenes/alfabeto.png" alt="El alfabeto" />
+                <p>El Alfabeto</p>
+              </a>
+            </div>
+          </div>
+          <!-- Leccion 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="leccion">
+              <a href="" target="_blank">
+                <img src="./imagenes/animales.jpeg" alt="Animales" />
+                <p>Animales</p>
+              </a>
+            </div>
+          </div>
+          <!-- Leccion 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="leccion">
+              <a href="" target="_blank">
+                <img
+                  src="./imagenes/familia.jpeg"
+                  alt="Miembros de la Familia"
+                />
+                <p>Familia</p>
+              </a>
+            </div>
+          </div>
+          <!-- Leccion 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="leccion">
+              <a href="" target="_blank">
+                <img
+                  src="./imagenes/cuerpo.png"
+                  alt="Partes del cuerpo humano"
+                />
+                <p>Partes del cuerpo</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de pagina(footer) -->
+    <footer
+      class="seccion-oscura d-flex flex-column align-items-center justify-content-center"
+    >
+      <div
+        class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <a
+          href="https://es-la.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/es/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-tiktok"></i>
+        </a>
+        <a
+          href="mailto:ehdez0594@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Enedina(2023) &#169;</div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

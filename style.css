@@ -1,0 +1,135 @@
+/* Barra de navegacion */
+.navbar {
+  padding: 30px;
+  background-color: #f5f6f7;
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* estilos generales */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 40px;
+  font-family: "Rubik Dirt", cursive;
+}
+.seccion-oscura {
+  color: white;
+  background-color: #454f38;
+}
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+.seccion-titulo {
+  font-size: 32px;
+  padding: 15px 0;
+  font-family: "Rubik Dirt", cursive;
+}
+.seccion-texto {
+  font-size: 20px;
+}
+.texto-negro {
+  color: black;
+}
+.texto-blanco {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+/* seccion encabezado */
+.encabezado {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.encabezado-principal {
+  padding: 40px;
+}
+.encabezado-principal h1,
+h2 {
+  text-align: center;
+}
+.encabezado-imagen-perfil {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+.encabezado-principal h2 {
+  font-size: 24px;
+  color: black;
+}
+
+/* Carrusel */
+.carousel {
+  max-width: 800px;
+}
+
+/* Sobre mixteco */
+.sobre-mixteco {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mixteco .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+.btn {
+  background-color: #f5f6f7;
+  color: #454f38;
+}
+
+/* lecciones */
+.lecciones {
+  padding: 40px;
+}
+.lecciones img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.leccion p {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+/* pie de pagina */
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 25px;
+}
+.derechos-de-autor {
+  font-size: 15px;
+  color: aliceblue;
+  padding: 20px;
+}
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
